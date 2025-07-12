@@ -1,7 +1,8 @@
 package com.walletwave.jwtlogintemplate.config;
 
-import com.eazybytes.exceptionhandling.CustomAccessDeniedHandler;
-import com.eazybytes.exceptionhandling.CustomBasicAuthenticationEntryPoint;
+
+import com.walletwave.jwtlogintemplate.exceptionhandling.CustomAccessDeniedHandler;
+import com.walletwave.jwtlogintemplate.exceptionhandling.CustomBasicAuthenticationEntryPoint;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;

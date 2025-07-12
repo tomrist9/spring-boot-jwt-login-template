@@ -2,7 +2,7 @@ spring:
   application:
     name: spring-boot-jwt-login-template
   config:
-    import: application_prod.properties
+    import: application_prod.yaml
   profiles:
     active: default
   datasource:
