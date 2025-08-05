@@ -3,8 +3,6 @@ spring:
     port: ${SERVER_PORT:8089}
   application:
     name: spring-boot-jwt-login-template
-  config:
-    import: application_prod.yaml
   profiles:
     active: default
   datasource:

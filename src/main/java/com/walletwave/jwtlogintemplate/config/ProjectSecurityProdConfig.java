@@ -19,33 +19,33 @@ import static org.springframework.security.config.Customizer.withDefaults;
 @Profile("prod")
 public class ProjectSecurityProdConfig {
 
-    @Bean
-    SecurityFilterChain defaultSecurityFilterChain(HttpSecurity http) throws Exception {
-        http.sessionManagement(smc -> smc.sessionFixation(sfc -> sfc.newSession())
-                        .invalidSessionUrl("/invalidSession").maximumSessions(1).maxSessionsPreventsLogin(true))
-                .requiresChannel(rcc -> rcc.anyRequest().requiresSecure()) // Only HTTPS
-                .csrf(csrfConfig -> csrfConfig.disable())
-                .authorizeHttpRequests((requests) -> requests
-                        .requestMatchers("/myAccount", "/myBalance", "/myLoans", "/myCards").authenticated()
-                        .requestMatchers("/notices", "/contact", "/error", "/register", "/invalidSession").permitAll());
-        http.formLogin(withDefaults());
-        http.httpBasic(hbc -> hbc.authenticationEntryPoint(new CustomBasicAuthenticationEntryPoint()));
-        http.exceptionHandling(ehc -> ehc.accessDeniedHandler(new CustomAccessDeniedHandler()));
-        return http.build();
-    }
-
-    @Bean
-    public PasswordEncoder passwordEncoder() {
-        return PasswordEncoderFactories.createDelegatingPasswordEncoder();
-    }
-
-    /**
-     * From Spring Security 6.3 version
-     * @return
-     */
-    @Bean
-    public CompromisedPasswordChecker compromisedPasswordChecker() {
-        return new HaveIBeenPwnedRestApiPasswordChecker();
-    }
+//    @Bean
+//    SecurityFilterChain defaultSecurityFilterChain(HttpSecurity http) throws Exception {
+//        http.sessionManagement(smc -> smc.sessionFixation(sfc -> sfc.newSession())
+//                        .invalidSessionUrl("/invalidSession").maximumSessions(1).maxSessionsPreventsLogin(true))
+//                .requiresChannel(rcc -> rcc.anyRequest().requiresSecure()) // Only HTTPS
+//                .csrf(csrfConfig -> csrfConfig.disable())
+//                .authorizeHttpRequests((requests) -> requests
+//                        .requestMatchers("/myAccount", "/myBalance", "/myLoans", "/myCards").authenticated()
+//                        .requestMatchers("/notices", "/contact", "/error", "/register", "/invalidSession").permitAll());
+//        http.formLogin(withDefaults());
+//        http.httpBasic(hbc -> hbc.authenticationEntryPoint(new CustomBasicAuthenticationEntryPoint()));
+//        http.exceptionHandling(ehc -> ehc.accessDeniedHandler(new CustomAccessDeniedHandler()));
+//        return http.build();
+//    }
+//
+//    @Bean
+//    public PasswordEncoder passwordEncoder() {
+//        return PasswordEncoderFactories.createDelegatingPasswordEncoder();
+//    }
+//
+//    /**
+//     * From Spring Security 6.3 version
+//     * @return
+//     */
+//    @Bean
+//    public CompromisedPasswordChecker compromisedPasswordChecker() {
+//        return new HaveIBeenPwnedRestApiPasswordChecker();
+//    }
 
 }

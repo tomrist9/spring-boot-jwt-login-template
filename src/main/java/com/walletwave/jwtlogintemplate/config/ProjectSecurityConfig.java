@@ -14,34 +14,36 @@ import org.springframework.security.web.authentication.password.HaveIBeenPwnedRe
 import static org.springframework.security.config.Customizer.withDefaults;
 
 @Configuration
-@Profile("!prod")
 public class ProjectSecurityConfig {
 
     @Bean
     SecurityFilterChain defaultSecurityFilterChain(HttpSecurity http) throws Exception {
-        http.csrf(csrfConfig -> csrfConfig.disable())
-                .authorizeHttpRequests((requests) -> requests
+        http
+                .csrf(csrf -> csrf.disable())
+                .authorizeHttpRequests(auth -> auth
                         .requestMatchers("/myAccount", "/myBalance", "/myLoans", "/myCards").authenticated()
-                        .requestMatchers("/notices", "/contact", "/error", "/register").permitAll());
-        http.formLogin(withDefaults())
-                        .logout(loc -> loc.logoutSuccessUrl("/login?logout=true").invalidateHttpSession(true).clearAuthentication(true)
-                                .deleteCookies("JSESSIONID"));
+                        .requestMatchers("/notices", "/contact", "/error", "/register", "/", "/public/**").permitAll()
+                        .anyRequest().authenticated() // ✅ Ensures everything else is secured
+                )
+                .formLogin(withDefaults()) // Provides default login page
+                .httpBasic(hbc -> hbc.authenticationEntryPoint(new CustomBasicAuthenticationEntryPoint()))
+                .logout(logout -> logout
+                        .logoutSuccessUrl("/login?logout=true")
+                        .invalidateHttpSession(true)
+                        .clearAuthentication(true)
+                        .deleteCookies("JSESSIONID")
+                )
+                .exceptionHandling(ehc -> ehc.authenticationEntryPoint(new CustomBasicAuthenticationEntryPoint()));
 
-        http.httpBasic(hbc -> hbc.authenticationEntryPoint(new CustomBasicAuthenticationEntryPoint()));
-        http.exceptionHandling(ehc -> ehc.authenticationEntryPoint(new CustomBasicAuthenticationEntryPoint()));
         return http.build();
     }
 
     @Bean
     public PasswordEncoder passwordEncoder() {
+
         return PasswordEncoderFactories.createDelegatingPasswordEncoder();
     }
 
-    /**
-     * From Spring Security 6.3 version
-     *
-     * @return
-     */
     @Bean
     public CompromisedPasswordChecker compromisedPasswordChecker() {
         return new HaveIBeenPwnedRestApiPasswordChecker();
