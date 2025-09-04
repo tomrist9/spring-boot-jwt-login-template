@@ -1,6 +1,6 @@
 spring:
   server:
-    port: ${SERVER_PORT:8089}
+    port: 8089
   application:
     name: spring-boot-jwt-login-template
   profiles:
