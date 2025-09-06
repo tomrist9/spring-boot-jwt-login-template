@@ -106,7 +106,8 @@ Maven/Gradle
 
 
 
-### 📌 Use Cases
+## 📌 Use Cases
+
 
 This template can be used to:
 
