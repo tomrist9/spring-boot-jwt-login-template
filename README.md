@@ -107,29 +107,19 @@ Maven/Gradle
 
 
 ## 📌 Use Cases
-
-
 This template can be used to:
-
-Secure microservices with JWT
-
-Build a starter kit for SaaS products
-
-Integrate with frontend apps (React, Angular, Vue)
-
-## 💡 Next Steps
-
-Add Refresh Tokens
-
-Add Unit/Integration Tests
-
-Extend with OAuth2 Login (Google, GitHub, Facebook)
-
-🧑‍💻 Author
-
-Built with ❤️ by Tomris Teymurlu
-
+- Secure microservices with JWT  
+- Build a starter kit for SaaS products  
+- Integrate with frontend apps (React, Angular, Vue)  
 
 ---
 
-Would you like me to also add a **“How to Test with Postman”** section (with screenshots placeholders) so Fiverr clients can follow step-by-step? That usually makes your repo more *client-friendly*.
+## 💡 Next Steps
+- Add **Refresh Tokens**  
+- Add **Unit/Integration Tests**  
+- Extend with **OAuth2 Login** (Google, GitHub, Facebook)  
+
+---
+
+## 🧑‍💻 Author
+Built with ❤️ by [Tomris Teymurlu](https://github.com/tomrist9)
