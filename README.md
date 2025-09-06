@@ -105,8 +105,8 @@ PostgreSQL/MySQL
 Maven/Gradle
 
 
-
 ## 📌 Use Cases
+
 This template can be used to:
 - Secure microservices with JWT  
 - Build a starter kit for SaaS products  
