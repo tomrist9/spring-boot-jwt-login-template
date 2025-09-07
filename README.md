@@ -108,14 +108,10 @@ Maven/Gradle
 
 ## 📸 Screenshots
 
-### 1. User Registration
-![Register Success](https://raw.githubusercontent.com/tomrist9/spring-boot-jwt-login-template/main/src/main/resources/static/screenshots/register_success.png)
+![Register Success](src/main/resources/static/screenshots/register_success.png)
+![JWT Token](src/main/resources/static/screenshots/jwt_token.png)
+![My Account Success](src/main/resources/static/screenshots/myaccount_success.png)
 
-### 2. Login & JWT Token
-![JWT Token](https://raw.githubusercontent.com/tomrist9/spring-boot-jwt-login-template/main/src/main/resources/static/screenshots/jwt_token.png)
-
-### 3. Access Protected Endpoint (`/myAccount`)
-![My Account Success](https://raw.githubusercontent.com/tomrist9/spring-boot-jwt-login-template/main/src/main/resources/static/screenshots/myaccount_success.png)
 
 
 
