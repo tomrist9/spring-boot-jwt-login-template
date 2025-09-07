@@ -170,7 +170,7 @@ Add Unit/Integration Tests
 
 Extend with OAuth2 Login (Google, GitHub, Facebook)
 
-## 🧑‍💻 Author
+## 👩‍💻 Author
 
 Built by Tomris Teymurlu
 
