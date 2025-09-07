@@ -141,3 +141,8 @@ Built by Tomris Teymurlu
 
 ---
 
+[![Build](https://img.shields.io/github/actions/workflow/status/tomrist9/spring-boot-jwt-login-template/maven.yml?branch=main)](https://github.com/tomrist9/spring-boot-jwt-login-template/actions)
+[![License](https://img.shields.io/github/license/tomrist9/spring-boot-jwt-login-template)](LICENSE)
+[![Stars](https://img.shields.io/github/stars/tomrist9/spring-boot-jwt-login-template?style=social)](https://github.com/tomrist9/spring-boot-jwt-login-template/stargazers)
+[![Issues](https://img.shields.io/github/issues/tomrist9/spring-boot-jwt-login-template)](https://github.com/tomrist9/spring-boot-jwt-login-template/issues)
+[![Last Commit](https://img.shields.io/github/last-commit/tomrist9/spring-boot-jwt-login-template)](https://github.com/tomrist9/spring-boot-jwt-login-template/commits/main)
