@@ -21,15 +21,53 @@ This project demonstrates how to implement stateless authentication and role-bas
 ---
 
 ## 📂 Project Structure
-src/main/java/com/example/jwt
-│── config/ # Spring Security configuration
-│── controller/ # REST endpoints (login, secured APIs)
-│── dto/ # Request/Response DTOs
-│── model/ # Entities (User, Role)
-│── repository/ # Spring Data JPA Repositories
-│── service/ # UserDetailsService, JWT Service
-│── util/ # JWT utility class
+src/main/java/com/walletwave/jwtlogintemplate
+│── config/ # Spring Security config (SecurityFilterChain, PasswordEncoder)
+│ │── ProjectSecurityConfig.java
+│ │── WalletWaveUserDetailsService.java
+│ │── WalletWaveUsernamePwdAuthenticationProvider.java
+│
+│── controller/ # REST Controllers (Auth, Account, User, etc.)
+│ │── AuthController.java
+│ │── AccountController.java
+│ │── UserController.java
+│ ...
+│
+│── dto/ # Data Transfer Objects (LoginRequest, LoginResponse)
+│
+│── events/ # Authentication event listeners (login success/failure)
+│ │── AuthenticationEvents.java
+│
+│── exceptionhandling/ # Custom exception handlers (e.g. AccessDeniedHandler)
+│
+│── filter/ # JWT and security filters
+│ │── JwtAuthenticationFilter.java
+│ │── CsrfCookieFilter.java
+│
+│── model/ # Entities (mapped to DB tables)
+│ │── Accounts.java
+│ │── Customer.java
+│ ...
+│
+│── repository/ # Spring Data JPA repositories
+│ │── AccountsRepository.java
+│ │── CustomerRepository.java
+│ ...
+│
+│── service/ # Business logic and JWT service
+│ │── JwtService.java
+│
+│── SpringBootJwtLoginTemplateApplication.java
 
+
+src/main/resources  
+
+
+│── application.yml # Application configuration
+│── sql/ # SQL initialization scripts
+│── static/ # Static resources (css, images, screenshots)
+│ │── screenshots/ # Project screenshots for README
+│── templates/ 
 
 ---
 
