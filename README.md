@@ -36,7 +36,7 @@ src/main/java/com/example/jwt
 ## 🚀 Getting Started
 
 ### Clone the repository
-
+```bash
 git clone https://github.com/tomrist9/spring-boot-jwt-template.git
 cd spring-boot-jwt-template
 
@@ -89,6 +89,11 @@ Example:
 
 GET /api/users/me
 Authorization: Bearer <JWT_TOKEN>
+
+```bash
+
+
+
 🛠️ Tech Stack
 
 Java 17
