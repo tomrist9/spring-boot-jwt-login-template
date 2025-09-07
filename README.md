@@ -21,6 +21,7 @@ This project demonstrates how to implement stateless authentication and role-bas
 ---
 
 ## 📂 Project Structure
+```bash
 src/main/java/com/walletwave/jwtlogintemplate
 │── config/ # Spring Security config (SecurityFilterChain, PasswordEncoder)
 │ ├── ProjectSecurityConfig.java
@@ -78,6 +79,8 @@ src/main/resources
 │── templates/ 
 
 ---
+
+```
 
 ## 🚀 Getting Started
 
