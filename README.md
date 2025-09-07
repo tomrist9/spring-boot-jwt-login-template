@@ -36,7 +36,7 @@ src/main/java/com/example/jwt
 ## 🚀 Getting Started
 
 ### Clone the repository
-```bash
+
 git clone https://github.com/tomrist9/spring-boot-jwt-template.git
 cd spring-boot-jwt-template
 
