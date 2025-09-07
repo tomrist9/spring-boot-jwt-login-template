@@ -107,7 +107,7 @@ Maven/Gradle
 ## 📸 Screenshots
 
 ### 1. User Registration
-![Register Success](src/main/resources/static/screenshots/register_success.png)
+![Register Success](https://raw.githubusercontent.com/tomrist9/spring-boot-jwt-login-template/main/src/main/resources/static/screenshots/register_success.png)
 
 ### 2. Login & JWT Token
 ![JWT Token](src/main/resources/static/screenshots/jwt_token.png)
