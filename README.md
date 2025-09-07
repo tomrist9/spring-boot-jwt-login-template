@@ -136,7 +136,7 @@ Extend with OAuth2 Login (Google, GitHub, Facebook)
 
 ## 🧑‍💻 Author
 
-Built with ❤️ by Tomris Teymurlu
+Built by Tomris Teymurlu
 
 
 ---
