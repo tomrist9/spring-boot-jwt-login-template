@@ -23,41 +23,49 @@ This project demonstrates how to implement stateless authentication and role-bas
 ## 📂 Project Structure
 src/main/java/com/walletwave/jwtlogintemplate
 │── config/ # Spring Security config (SecurityFilterChain, PasswordEncoder)
-│ │── ProjectSecurityConfig.java
-│ │── WalletWaveUserDetailsService.java
-│ │── WalletWaveUsernamePwdAuthenticationProvider.java
+│ ├── ProjectSecurityConfig.java
+│ ├── WalletWaveUserDetailsService.java
+│ └── WalletWaveUsernamePwdAuthenticationProvider.java
 │
 │── controller/ # REST Controllers (Auth, Account, User, etc.)
-│ │── AuthController.java
-│ │── AccountController.java
-│ │── UserController.java
-│ ...
+│ ├── AuthController.java
+│ ├── AccountController.java
+│ └── UserController.java
 │
 │── dto/ # Data Transfer Objects (LoginRequest, LoginResponse)
 │
 │── events/ # Authentication event listeners (login success/failure)
-│ │── AuthenticationEvents.java
+│ └── AuthenticationEvents.java
 │
-│── exceptionhandling/ # Custom exception handlers (e.g. AccessDeniedHandler)
+│── exceptionhandling/ # Custom exception handlers
+│ └── CustomAccessDeniedHandler.java
 │
 │── filter/ # JWT and security filters
-│ │── JwtAuthenticationFilter.java
-│ │── CsrfCookieFilter.java
+│ ├── JwtAuthenticationFilter.java
+│ └── CsrfCookieFilter.java
 │
 │── model/ # Entities (mapped to DB tables)
-│ │── Accounts.java
-│ │── Customer.java
-│ ...
+│ ├── Accounts.java
+│ └── Customer.java
 │
 │── repository/ # Spring Data JPA repositories
-│ │── AccountsRepository.java
-│ │── CustomerRepository.java
-│ ...
+│ ├── AccountsRepository.java
+│ └── CustomerRepository.java
 │
 │── service/ # Business logic and JWT service
-│ │── JwtService.java
+│ └── JwtService.java
 │
-│── SpringBootJwtLoginTemplateApplication.java
+│── SpringBootJwtLoginTemplateApplication.java # Main class
+
+src/main/resources
+│── application.yml # Application configuration
+│── sql/ # SQL initialization scripts
+│── static/ # Static resources (css, images, screenshots)
+│ └── screenshots/
+│ ├── register_success.png
+│ ├── jwt_token.png
+│ └── myaccount_success.png
+│── templates/ # (if using Thymeleaf or other templating)
 
 
 src/main/resources  
