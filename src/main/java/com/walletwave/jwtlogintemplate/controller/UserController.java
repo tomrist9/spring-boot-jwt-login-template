@@ -10,12 +10,11 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 
 import java.time.LocalDateTime;
-import java.util.Optional;
+
 
 @RestController
 @RequiredArgsConstructor
@@ -39,7 +38,7 @@ public class UserController {
                 .body("User registration failed");
     }
 
-    @GetMapping("/user") // better to use GET here
+    @GetMapping("/user")
     public ResponseEntity<Customer> getUserDetailsAfterLogin(Authentication authentication) {
         return customerRepository.findByEmail(authentication.getName())
                 .map(ResponseEntity::ok)

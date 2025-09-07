@@ -3,7 +3,6 @@ package com.walletwave.jwtlogintemplate.controller;
 
 import com.walletwave.jwtlogintemplate.model.Accounts;
 import com.walletwave.jwtlogintemplate.repository.AccountsRepository;
-import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
