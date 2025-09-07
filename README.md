@@ -23,59 +23,46 @@ This project demonstrates how to implement stateless authentication and role-bas
 ## 📂 Project Structure
 ```bash
 src/main/java/com/walletwave/jwtlogintemplate
-│── config/ # Spring Security config (SecurityFilterChain, PasswordEncoder)
+│── config/ 
 │ ├── ProjectSecurityConfig.java
 │ ├── WalletWaveUserDetailsService.java
 │ └── WalletWaveUsernamePwdAuthenticationProvider.java
 │
-│── controller/ # REST Controllers (Auth, Account, User, etc.)
+│── controller/ 
 │ ├── AuthController.java
 │ ├── AccountController.java
 │ └── UserController.java
 │
-│── dto/ # Data Transfer Objects (LoginRequest, LoginResponse)
+│── dto/
 │
-│── events/ # Authentication event listeners (login success/failure)
+│── events/ 
 │ └── AuthenticationEvents.java
 │
-│── exceptionhandling/ # Custom exception handlers
+│── exceptionhandling/ 
 │ └── CustomAccessDeniedHandler.java
 │
-│── filter/ # JWT and security filters
+│── filter/ 
 │ ├── JwtAuthenticationFilter.java
 │ └── CsrfCookieFilter.java
 │
-│── model/ # Entities (mapped to DB tables)
+│── model/
 │ ├── Accounts.java
 │ └── Customer.java
 │
-│── repository/ # Spring Data JPA repositories
+│── repository/ 
 │ ├── AccountsRepository.java
 │ └── CustomerRepository.java
 │
-│── service/ # Business logic and JWT service
+│── service/ 
 │ └── JwtService.java
 │
-│── SpringBootJwtLoginTemplateApplication.java # Main class
-
-src/main/resources
-│── application.yml # Application configuration
-│── sql/ # SQL initialization scripts
-│── static/ # Static resources (css, images, screenshots)
-│ └── screenshots/
-│ ├── register_success.png
-│ ├── jwt_token.png
-│ └── myaccount_success.png
-│── templates/ # (if using Thymeleaf or other templating)
-
+│── SpringBootJwtLoginTemplateApplication.java 
 
 src/main/resources  
-
-
-│── application.yml # Application configuration
-│── sql/ # SQL initialization scripts
-│── static/ # Static resources (css, images, screenshots)
-│ │── screenshots/ # Project screenshots for README
+│── application.yml 
+│── sql/
+│── static/ 
+│ │── screenshots/ 
 │── templates/ 
 
 ---
