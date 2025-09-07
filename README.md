@@ -90,7 +90,7 @@ Example:
 GET /api/users/me
 Authorization: Bearer <JWT_TOKEN>
 
-#### 🛠️ Tech Stack
+## 🛠️ Tech Stack
 
 Java 17
 
@@ -104,7 +104,7 @@ PostgreSQL/MySQL
 
 Maven/Gradle
 
-##### 📸 Screenshots
+
 
 ## 📸 Screenshots
 
