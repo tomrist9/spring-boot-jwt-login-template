@@ -94,7 +94,7 @@ Authorization: Bearer <JWT_TOKEN>
 
 
 
-🛠️ Tech Stack
+## 🛠️ Tech Stack
 
 Java 17
 
@@ -108,14 +108,14 @@ PostgreSQL/MySQL
 
 Maven/Gradle
 
-📸 Screenshots
+## 📸 Screenshots
 1. User Registration
 
 2. Login & JWT Token
 
 3. Access Protected Endpoint (/myAccount)
 
-📌 Use Cases
+## 📌 Use Cases
 
 This template can be used to:
 
@@ -125,7 +125,7 @@ Build a starter kit for SaaS products
 
 Integrate with frontend apps (React, Angular, Vue)
 
-💡 Next Steps
+## 💡 Next Steps
 
 Add Refresh Tokens
 
@@ -133,7 +133,7 @@ Add Unit/Integration Tests
 
 Extend with OAuth2 Login (Google, GitHub, Facebook)
 
-🧑‍💻 Author
+## 🧑‍💻 Author
 
 Built with ❤️ by Tomris Teymurlu
 
