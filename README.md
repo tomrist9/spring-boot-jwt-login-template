@@ -89,8 +89,7 @@ Example:
 
 GET /api/users/me
 Authorization: Bearer <JWT_TOKEN>
-
-## 📊 Tech Stack
+🛠️ Tech Stack
 
 Java 17
 
@@ -104,33 +103,35 @@ PostgreSQL/MySQL
 
 Maven/Gradle
 
+📸 Screenshots
+1. User Registration
 
+2. Login & JWT Token
 
-## 📸 Screenshots
+3. Access Protected Endpoint (/myAccount)
 
-![Register Success](src/main/resources/static/screenshots/register_success.png)
-![JWT Token](src/main/resources/static/screenshots/jwt_token.png)
-![My Account Success](src/main/resources/static/screenshots/myaccount_success.png)
-
-
-
-
-
-## 📌 Use Cases
+📌 Use Cases
 
 This template can be used to:
-- Secure microservices with JWT  
-- Build a starter kit for SaaS products  
-- Integrate with frontend apps (React, Angular, Vue)  
+
+Secure microservices with JWT
+
+Build a starter kit for SaaS products
+
+Integrate with frontend apps (React, Angular, Vue)
+
+💡 Next Steps
+
+Add Refresh Tokens
+
+Add Unit/Integration Tests
+
+Extend with OAuth2 Login (Google, GitHub, Facebook)
+
+🧑‍💻 Author
+
+Built with ❤️ by Tomris Teymurlu
+
 
 ---
 
-## 💡 Next Steps
-- Add **Refresh Tokens**  
-- Add **Unit/Integration Tests**  
-- Extend with **OAuth2 Login** (Google, GitHub, Facebook)  
-
----
-
-## 🧑‍💻 Author
-Built with ❤️ by [Tomris Teymurlu](https://github.com/tomrist9)
