@@ -90,7 +90,7 @@ Example:
 GET /api/users/me
 Authorization: Bearer <JWT_TOKEN>
 
-```bash
+```
 
 
 
