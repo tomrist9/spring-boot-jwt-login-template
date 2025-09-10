@@ -130,7 +130,7 @@ Authorization: Bearer <JWT_TOKEN>
 
 
 
-## 🛠️ Tech Stack
+##   Tech Stack
 
 Java 17
 
@@ -162,17 +162,7 @@ Build a starter kit for SaaS products
 
 Integrate with frontend apps (React, Angular, Vue)
 
-## 💡 Next Steps
 
-Add Refresh Tokens
-
-Add Unit/Integration Tests
-
-Extend with OAuth2 Login (Google, GitHub, Facebook)
-
-## 👩‍💻 Author
-
-Built by Tomris Teymurlu
 
 
 ---
