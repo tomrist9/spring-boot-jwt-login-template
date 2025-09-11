@@ -68,7 +68,7 @@ src/main/resources
 
 ```
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Clone the repository
 ```bash
