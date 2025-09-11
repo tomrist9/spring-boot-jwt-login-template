@@ -3,7 +3,6 @@
 [![Java](https://img.shields.io/badge/Java-17-red.svg)](https://openjdk.org/projects/jdk/17/)
 [![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3-green.svg)](https://spring.io/projects/spring-boot)
 [![Spring Security](https://img.shields.io/badge/Spring%20Security-6-brightgreen.svg)](https://spring.io/projects/spring-security)
-[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 A production-ready template for building secure REST APIs with **Spring Boot 3** and **JWT (JSON Web Tokens)**.  
 This project demonstrates how to implement stateless authentication and role-based authorization using Spring Security.
