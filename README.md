@@ -6,6 +6,7 @@
 
 A production-ready template for building secure REST APIs with **Spring Boot 3** and **JWT (JSON Web Tokens)**.  
 This project demonstrates how to implement stateless authentication and role-based authorization using Spring Security.
+It is the **Phase 1** of the [Spring Security Series](https://github.com/tomrist9/spring-security-series).
 
 ---
 
