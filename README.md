@@ -10,13 +10,13 @@ It is the **Phase 1** of the [Spring Security Series](https://github.com/tomrist
 
 ---
 
-## ✨ Features
-- 🔑 **JWT Authentication** (login endpoint, token generation, refresh token support)  
-- 🛡️ **Role-Based Access Control** (e.g., `USER`, `ADMIN`)  
-- 📦 **Stateless Security** (no session storage, scalable APIs)  
-- 🧪 **Exception Handling** for invalid/expired tokens  
-- 📝 **Ready-to-Use REST Endpoints**  
-- ⚡ Built with **Spring Boot 3**, **Spring Security 6**, **Maven/Gradle**  
+##  Features
+-  **JWT Authentication** (login endpoint, token generation, refresh token support)  
+-  **Role-Based Access Control** (e.g., `USER`, `ADMIN`)  
+-  **Stateless Security** (no session storage, scalable APIs)  
+-  **Exception Handling** for invalid/expired tokens  
+-  **Ready-to-Use REST Endpoints**  
+-  Built with **Spring Boot 3**, **Spring Security 6**, **Maven/Gradle**  
 
 ---
 
