@@ -1,7 +1,7 @@
 package com.walletwave.jwtlogintemplate.controller;
 
-import com.walletwave.jwtlogintemplate.dto.LoginRequest;
-import com.walletwave.jwtlogintemplate.dto.LoginResponse;
+import com.walletwave.jwtlogintemplate.dto.LoginRequestDTO;
+import com.walletwave.jwtlogintemplate.dto.LoginResponseDTO;
 import com.walletwave.jwtlogintemplate.service.JwtService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
@@ -23,7 +23,7 @@ public class AuthController {
     private final JwtService jwtService;
 
     @PostMapping("/login")
-    public ResponseEntity<LoginResponse> login(@RequestBody LoginRequest loginRequest) {
+    public ResponseEntity<LoginResponseDTO> login(@RequestBody LoginRequestDTO loginRequest) {
         Authentication authentication = authenticationManager.authenticate(
                 new UsernamePasswordAuthenticationToken(
                         loginRequest.getEmail(),
@@ -35,6 +35,6 @@ public class AuthController {
 
         String token = jwtService.generateToken(authentication);
 
-        return ResponseEntity.ok(new LoginResponse(token, "Bearer"));
+        return ResponseEntity.ok(new LoginResponseDTO(token, "Bearer"));
     }
 }
