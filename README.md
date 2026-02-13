@@ -76,7 +76,9 @@ src/main/resources
 git clone https://github.com/tomrist9/spring-boot-jwt-template.git 
 cd spring-boot-jwt-template
 
-Configure Database
+---
+
+### Configure Database
 
 Update application.yml (or application.properties) with your PostgreSQL/MySQL credentials:
 
