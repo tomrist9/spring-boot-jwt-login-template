@@ -76,7 +76,9 @@ src/main/resources
 git clone https://github.com/tomrist9/spring-boot-jwt-template.git 
 cd spring-boot-jwt-template
 
----
+
+
+```
 
 ### Configure Database
 
@@ -100,7 +102,7 @@ or
 
 ./gradlew bootRun
 
-🔐 API Endpoints
+### API Endpoints
 Authentication
 
 POST /api/auth/login → Generate JWT token
