@@ -133,6 +133,7 @@ Authorization: Bearer <JWT_TOKEN>
 
 
 ```
+```bash
 
 ##   Tech Stack
 
